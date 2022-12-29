@@ -1,0 +1,54 @@
+/*Este código é um 'mobile first'*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body * {
+    font-family: inter, sans-serif;
+    color: #fff;
+}
+body {
+    /*background: color image repeat position/cover;*/
+    background: url("/assets/mobile-dark.jpg") no-repeat top center/cover;
+}
+#container {
+    /*margin: top right bottom left ;*/
+    margin: 3.5rem auto;
+    width: 22.5rem;
+}
+#profile {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#profile img {
+    /*Em elementos do tipo inline, não é possível usar margin: auto;*/
+    width: 7rem;
+    margin-bottom: 0.5rem;
+}
+#profile p {
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/*Links*/
+ul {
+    display: flex;
+    flex-direction: column;
+    /*Dá um espaçamento entre os elementos*/
+    gap: 1rem;
+}
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5;
+    background: rgba(255, 255, 255, 0.1)
+}
+ul li a {
+    padding: 1rem 1.5rem;
+
+}
