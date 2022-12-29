@@ -59,3 +59,23 @@ ul li a:hover {
     border: 1.5px solid #fff;
     background:rgba(255, 255, 255, 0.05);
 }
+
+/*social links*/
+#social-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: background 0.4s;
+    border-radius: 50%;
+}
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
