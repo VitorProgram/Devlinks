@@ -41,14 +41,21 @@ ul {
     /*Dá um espaçamento entre os elementos*/
     gap: 1rem;
 }
-ul li {
+ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5;
-    background: rgba(255, 255, 255, 0.1)
-}
-ul li a {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
     padding: 1rem 1.5rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-weight: 500; /*bold*/
 
+    transition: background 0.4s;
+}
+ul li a:hover {
+    border: 1.5px solid #fff;
+    background:rgba(255, 255, 255, 0.05);
 }
