@@ -18,6 +18,8 @@
 
     --switch-bg-url: url(/assets/moon-stars.svg);
 }
+
+/*Troca entre modo noturno e modo claro*/
 .light {
     --text-color: #000;
     --bg-url: url(/assets/mobile-light.jpg);
@@ -29,6 +31,7 @@
     --highlight-color: rgba(0, 0, 0, 0.1);
 
     --switch-bg-url: url(/assets/sun.svg);
+    
 }
 
 body * {
@@ -47,6 +50,7 @@ body {
     /*margin: top right bottom left ;*/
     width: 22.5rem;
 }
+/*Área de perfil*/
 #profile {
     padding: 1.5rem;
     text-align: center;
@@ -55,18 +59,25 @@ body {
 #profile img {
     /*Em elementos do tipo inline, não é possível usar margin: auto;*/
     width: 7rem;
+    background: var(--stroke-color);
+    border-radius: 50%;
     margin-bottom: 0.5rem;
+}
+.light #profile img {
+    background: var(--surface-color);
 }
 #profile p {
     font-weight: 500;
     line-height: 1.5rem;
 }
 
+/*Troca entre modo noturno e modo claro*/
 #switch {
     /*margin: top right bottom left ;*/
     margin: auto auto 2rem auto;
     width: 4rem;
     position: relative;
+    
 }
 #switch button {
     position: absolute;
@@ -144,6 +155,7 @@ ul li a:hover {
     background: var(--highlight-color);
 }
 
+/*Informações adicionais*/
 footer {
     font-size: 15px;
     padding: 1.5rem;
