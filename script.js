@@ -14,4 +14,7 @@ function toggleMode() {
     if(html.classList.contains(`light`)) {
         alt.setAttribute(`alt`, `Foto de perfil`)
     }
+    else {
+        alt.setAttribute(`alt`, `Perfil sem foto`)
+    }
 }
