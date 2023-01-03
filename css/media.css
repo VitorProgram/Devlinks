@@ -1,0 +1,10 @@
+/*Media Queries*/
+
+@media (min-width: 37.5rem) {
+    :root {
+        --bg-url: url("/assets/desktop-dark.jpg");
+    }
+    .light {
+        --bg-url: url("/assets/desktop-light.jpg");
+    }
+}
