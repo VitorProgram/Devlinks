@@ -94,10 +94,16 @@ body {
     /*Deixando o elemento no meio*/
     top: 50%;
     transform: translateY(-50%);
+
+    /*animation*/
+    animation: slide-back .3s forwards;
 }
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in .3s forwards /*mantem a propriedade colocadas nos keyframes na linha 171*/;
+}
+
+#switch button:hover {
+    outline: 0.5rem solid var(--highlight-color);
 }
 
 #switch span {
@@ -165,4 +171,23 @@ footer {
 }
 footer a {
     text-decoration: underline;
+}
+
+/* Animation button */
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
